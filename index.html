@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Leeful 9.00 Test v5.0 [GoldHEN V2.2.5b8]</title>
+<title>Leeful 9.00 v5.0 [GoldHEN v2.4b5]</title>
 <link rel="shortcut icon" href="favicon.ico"></link>
 <link rel="stylesheet" href="btn.css">
 <style>
@@ -13,6 +13,12 @@ body{background: linear-gradient(to bottom right, #063FAB, #01258A);color:white;
 <div id="msgs" class="info">Running Webkit Exploit, Please Wait ...</div>
 <script>
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+function load_mainmenu(){
+var link = document.createElement('a');
+document.body.appendChild(link);
+link.href = '../index.html';
+link.click();
+}
 </script>
 </body>
 </html>
